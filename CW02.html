@@ -1,0 +1,164 @@
+<!DOCTYPE html
+<html>
+    <head>
+        <title> ClassWork02</title>
+        <style>
+              /* Exercise 1 */
+            p{
+                color:darkred;
+            }
+              /* Exercise 2 */
+            .whatsmissing{
+                float:right;
+                background-color: rgb(74, 26, 208);
+            }
+            h1 {
+                color: red;
+                margin-left: 2cm;
+            }
+            h2 {
+                color: red;
+                margin-left: 4cm;
+            }
+            p.internal-paragraph {
+                text-indent: 2cm;
+                color: darkred;
+                margin-left: 6cm;
+            }
+              /* Exercise 4 */
+            body{
+                font-family: Arial, sans-serif;
+                background-color: chocolate;
+            }
+            h1.artist{
+                font-size: 14pt;
+                font-weight: bold;
+                color: moccasin;
+            }
+            h2.songtitle{
+                font-size: 14pt;
+                color: khaki;
+            }
+            p.album,p.year{
+                font-size: 12pt;
+                color: khaki;
+            }
+            .year {
+                font-size: 12pt;
+                font-weight: bold;
+                color: ivory;
+            }
+            p.verse {
+                font-size: 14pt;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                color: gold;
+                margin-left: 2cm;
+                margin-right: 2cm;
+            }
+            p.chorus {
+                font-size: 14pt;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                font-style: italic;
+                color: gold;
+                margin-left: 4cm;
+                margin-right: 4cm;
+            }
+            .departmentinfo {
+                background-color: #9b25f5;
+                padding: 20px;
+                border: 1px solid #CCCCCC;
+                font-family: Arial, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                margin: 0 auto;
+            }
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="CW02.css">
+    </head>
+    <body>
+        <h1>Exercise 1</h1>
+        <p>This paragraph has been formatted using the in-line style command.</p>
+        <p>This paragraph has not been formatted using the in-line style command.</p>
+      
+        <h2>Exercise 2</h2>
+        <div class="whatsmissing">
+            <ul>
+                <li>The font-family is missing a closing double quote at the end</li>
+                <li>There is a missing semicolon in the margin-left property of the "h1, h2, h3" selector.</li>
+            </ul>
+        </div>
+      
+        <h3>Exercise 3 - Inline Styles</h3>
+        <h1 style="color:red;margin-left:2cm">h1 heading</h1>
+        <h2 style="color:red;margin-left:4cm">h2 subheading</h2>
+        <p style="text-indent:2cm;color:darkred;margin-left:6cm">Paragraph 1</p>
+        <p style="text-indent:2cm;color:darkred;margin-left:6cm">Paragraph 2</p>
+        <h2 style="color:red;margin-left:4cm">h2 subheading</h2>
+        <p style="text-indent:2cm;color:darkred;margin-left:6cm">Paragraph 1</p>
+
+        <h3>Exercise 3 - Internal Styles</h3>
+        <h1>h1 heading</h1>
+        <h2>h2 subheading</h2>
+        <p class="internal-paragraph">Paragraph 1</p>
+        <p class="internal-paragraph">Paragraph 2</p>
+        <h2>h2 subheading</h2>
+        <p class="internal-paragraph">Paragraph 1</p>
+
+        <h3>Exercise 3 - External Styles</h3>
+        <h1 class="external-h1">h1 heading</h1>
+        <h2 class="external-h2">h2 subheading</h2>
+        <p class="external-paragraph">Paragraph 1</p>
+        <p class="external-paragraph">Paragraph 2</p>
+        <h2 class="external-h2">h2 subheading</h2>
+        <p class="external-paragraph">Paragraph 1</p>
+      
+        <h4>Exercise 4</h4>
+        <h1 class="artist">Artist</h1>
+        <h2 class="song-title">Song Title</h2>
+        <p class="album">Album</p>
+        <p class="year">Year</p>
+        <p class="verse">Verse Lyrics go here</p>
+        <p class="chorus">Chorus Lyrics go here</p>
+      
+        <h5>Exercise 5</h5>
+        <link rel="stylesheet" type="text/css" href="CW02.css">
+      
+        <h6>Exercise 6</h6>
+        <div class="departmentinfo">
+          <h1>Department of Mathematics</h1>
+          <p>Student Exam Grades</p>
+          <table border="1">
+            <tr>
+                <td>Student</td>
+                <td>Test 1</td>
+                <td>Test 2</td>
+                <td>Test 3</td>
+              </tr>
+              <tr>
+                <td>Christy</td>
+                <td>98</td>
+                <td>85</td>
+                <td>88</td>
+              </tr>
+              <tr>
+                <td>Sam</td>
+                <td>93</td>
+                <td>64</td>
+                <td>86</td>
+              </tr>
+              <tr>
+                <td>Efe</td>
+                <td>90</td>
+                <td>78</td>
+                <td>95</td>
+              </tr>
+          </table>
+        </div>
+      
+    </body>
+</html>
