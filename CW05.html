@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application Form</title>
+        <link rel="stylesheet" href="cw05.css">
+    </head>
+    <body>
+        <form>
+            <h1>Job Application Form</h1>
+            <label for="position">Position Applied For:</label>
+            <input type="text" id="position" name="position" required>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+    
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+    
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <h2>Educational History and Qualifications:</h2>
+            <textarea id="education" name="education" rows="4" required></textarea>
+    
+            <h2>Work Experience/Employment/Training:</h2>
+    
+            <label for="experience">Years of Experience:</label>
+            <input type="range" id="experience" name="experience" min="0" max="10" step="1">
+            <output for="experience" id="experienceValue">0 years</output>
+            
+            <label for="statement">Personal Statement:</label>
+            <textarea id="statement" name="statement" rows="4"></textarea>
+    
+            <h2>Referees:</h2>
+    
+            <label for="refereeName">Name:</label>
+            <input type="text" id="refereeName" name="refereeName">
+    
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation">
+    
+            <label for="relationship">Relationship:</label>
+            <select id="relationship" name="relationship">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="refereeAddress">Address:</label>
+            <textarea id="refereeAddress" name="refereeAddress" rows="4"></textarea>
+    
+            <label for="refereeTelephone">Telephone:</label>
+            <input type="tel" id="refereeTelephone" name="refereeTelephone">
+    
+            <label for="vegetarian">Vegetarian:</label>
+            <input type="radio" id="vegetarianYes" name="vegetarian" value="Yes">
+            <label for="vegetarianYes">Yes</label>
+            <input type="radio" id="vegetarianNo" name="vegetarian" value="No">
+            <label for="vegetarianNo">No</label>
+    
+            <label for="fruits">Select Fruits (Hold Ctrl/Command to select multiple):</label>
+            <select id="fruits" name="fruits" multiple>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+            </select>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
