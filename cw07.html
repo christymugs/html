@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId">
+    <div id="userIdError" class="error"></div>
+
+    <br>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <div id="firstNameError" class="error"></div>
+
+    <br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <div id="lastNameError" class="error"></div>
+
+    <br>
+
+    <button type="button" onclick="validateForm()">Add</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    function validateForm() {
+        var userId = document.getElementById("userId").value;
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+
+        var errors = [];
+
+        if (!userId) {
+            errors.push("User ID is required");
+            document.getElementById("userIdError").innerHTML = "User ID is required";
+        } else {
+            document.getElementById("userIdError").innerHTML = "";
+        }
+
+        if (!firstName) {
+            errors.push("First Name is required");
+            document.getElementById("firstNameError").innerHTML = "First Name is required";
+        } else {
+            document.getElementById("firstNameError").innerHTML = "";
+        }
+
+        if (!lastName) {
+            errors.push("Last Name is required");
+            document.getElementById("lastNameError").innerHTML = "Last Name is required";
+        } else {
+            document.getElementById("lastNameError").innerHTML = "";
+        }
+
+        if (errors.length > 0) {
+            alert(errors.join("\n"));
+        } else {
+            displayResults(userId, firstName, lastName);
+            document.getElementById("myForm").reset();
+        }
+    }
+
+    function displayResults(userId, firstName, lastName) {
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "UserID: " + userId + "<br>First Name: " + firstName + "<br>Last Name: " + lastName;
+    }
+</script>
+
+</body>
+</html>
